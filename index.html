@@ -1,136 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur">
 <head>
-    <meta charset="UTF-8">
-    <title>Meri Pehli Website</title>
-    <style>
-        body {
-            background-color: lightblue;
-            text-align: center;
-            font-family: Arial;
-        }
-        h1 {
-            color: darkblue;
-        }
-        p {
-            color: gray;
-        }
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-        button {
-            background-color: blue;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 10px;
-            font-size: 18px;
-            display: block;
-            margin: 0 auto;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: navy;
-        }
-        h2 {
-            text-align: center;
-            color: darkblue;
-            margin-top: 50px;
-            font-size: 26px;
-        }
-        .skills {
-            text-align: center;
-            font-size: 18px;
-            color: #333;
-            line-height: 2;
-            background-color: white;
-            width: 60%;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        <h2>Mere Projects</h2>
-    <div class="projects">
-        <div class="project-box">
-            <h3>📱 Project 1</h3>
-            <p>Meri Pehli Portfolio Website</p>
-        </div>
-        <div class="project-box">
-            <h3>🛒 Project 2</h3>
-            <p>Online Shop Website</p>
-        </div>
-        <div class="project-box">
-            <h3>🍔 Project 3</h3>
-            <p>Restaurant Website</p>
-        </div>
-    </div>
-        .contact-form {
-            background-color: white;
-            width: 50%;
-            margin: 20px auto 50px auto;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 2px solid lightblue;
-            border-radius: 8px;
-            font-size: 16px;
-            box-sizing: border-box;
-        }
-        .contact-form button {
-            background-color: blue;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 10px;
-            font-size: 18px;
-            width: 100%;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: navy;
-        }
-        <footer>
-        <p>© 2026 Husnain. Sab Huqooq Mehfooz Hain.</p>
-        <p>Banaaya Gaya HTML aur CSS Se ❤️</p>
-    </footer>
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Husnain | Web Developer & Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #0f0c29; background: linear-gradient(to right, #24243e, #302b63, #0f0c29); color: white; overflow-x: hidden; }
+    
+    /* Animated Background */
+    .bg-animation { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+    .bg-animation span { position: absolute; background: rgba(255,255,255,0.1); border-radius: 50%; animation: float 20s infinite; }
+    @keyframes float { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; } }
+
+    /* Navbar */
+    nav { display: flex; justify-content: space-between; padding: 30px 10%; backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 100; }
+    nav h2 { font-size: 1.8em; background: linear-gradient(90deg, #00dbde, #fc00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    nav a { color: white; text-decoration: none; margin-left: 30px; font-weight: 500; transition: 0.3s; }
+    nav a:hover { color: #fc00ff; }
+
+    /* Hero Section */
+    .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; }
+    .hero h1 { font-size: 3.5em; margin-bottom: 20px; }
+    .hero h1 span { background: linear-gradient(90deg, #00dbde, #fc00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.3em; opacity: 0.8; margin-bottom: 30px; }
+    .btn { background: linear-gradient(90deg, #00dbde, #fc00ff); padding: 15px 35px; border: none; border-radius: 50px; color: white; font-size: 1.1em; font-weight: 600; cursor: pointer; transition: 0.4s; text-decoration: none; display: inline-block; }
+    .btn:hover { transform: scale(1.1); box-shadow: 0 0 30px rgba(252, 0, 255, 0.5); }
+
+    /* Glass Card */
+    .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 40px; margin: 50px 10%; text-align: center; }
+    .glass h2 { margin-bottom: 20px; font-size: 2em; }
+
+    /* Skills */
+    .skills { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    .skill { background: rgba(255,255,255,0.1); padding: 15px 30px; border-radius: 15px; font-weight: 600; transition: 0.3s; }
+    .skill:hover { transform: translateY(-10px); background: linear-gradient(90deg, #00dbde, #fc00ff); }
+
+    /* Footer */
+    footer { text-align: center; padding: 30px; opacity: 0.6; }
+  </style>
 </head>
 <body>
 
-    <h1>Assalamalaikum! Mera Naam Husnain Hai</h1>
-    <p>Aaj Mera Pehla Din Hai Development Ka</p>
-    
-    <img src="C:\Users\Husnain\Desktop\photo.jpg" alt="mari photo">
-    
-    <button onclick="window.location.href='https://wa.me/923048867359'">Mujhse Rabta Karein</button>
+  <div class="bg-animation">
+    <span style="width:80px; height:80px; left:10%; animation-delay:0s;"></span>
+    <span style="width:20px; height:20px; left:20%; animation-delay:2s;"></span>
+    <span style="width:50px; height:50px; left:50%; animation-delay:4s;"></span>
+    <span style="width:120px; height:120px; left:80%; animation-delay:0s;"></span>
+  </div>
 
-    <h2>Mere Skills</h2>
+  <nav>
+    <h2>Husnain.dev</h2>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>Assalamualaikum, Main <span>Husnain</span> Hun</h1>
+      <p>Main Creative Web Developer aur UI/UX Designer hun. Main aapke ideas ko real website me badalta hun.</p>
+      <a href="#" class="btn">Mujhse Rabta Karein</a>
+    </div>
+  </section>
+
+  <section class="glass">
+    <h2>Meri Skills</h2>
     <div class="skills">
-        <p>✅ HTML - Website Banana</p>
-        <p>✅ CSS - Website Ko Khubsurat Banana</p>
-        <p>✅ Web Development - Pehli Website Ready 😎</p>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3 + Animations</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">UI/UX</div>
     </div>
+  </section>
 
-    <h2>Mujhse Rabta Karein</h2>
-    <div class="contact-form">
-        <form>
-            <input type="text" placeholder="Apna Naam Likhein" required>
-            <input type="email" placeholder="Apna Email Likhein" required>
-            <textarea placeholder="Apna Message Likhein" rows="4" required></textarea>
-            <button type="submit">Message Bhejein</button>
-        </form>
-    </div>
-<footer>
-        <p>© 2026 Husnain. Sab Huqooq Mehfooz Hain.</p>
-        <p>Banaaya Gaya HTML aur CSS Se ❤️</p>
-    </footer>
+  <footer>
+    <p>© 2026 Husnain. Dil se banaya gaya ❤️</p>
+  </footer>
+
 </body>
 </html>
