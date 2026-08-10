@@ -2,15 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Husnain.dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Husnain.dev | Pro Web Developer</title>
   <style>
-    body { margin:0; font-family:Arial; background: linear-gradient(120deg, #4facfe, #00f2fe); color:white; text-align:center; padding:100px 20px; }
-    .btn { background:white; color:#0077ff; padding:15px 30px; border-radius:30px; text-decoration:none; font-weight:bold; }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif; }
+    
+    body { 
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      color:white; 
+      text-align:center; 
+    }
+    
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .container { padding:100px 20px; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; }
+    
+    h1 { font-size:60px; margin-bottom:10px; text-shadow: 0 0 20px rgba(0,0,0,0.5); }
+    h2 { font-size:25px; margin-bottom:20px; opacity:0.9; }
+    p { font-size:18px; max-width:600px; margin-bottom:40px; line-height:1.6; }
+    
+    .skills { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-bottom:40px; }
+    .skill { background: rgba(255,255,255,0.2); padding:10px 20px; border-radius:20px; backdrop-filter: blur(10px); }
+    
+    .btn { 
+      background:white; 
+      color:#0077ff; 
+      padding:18px 45px; 
+      border-radius:50px; 
+      text-decoration:none; 
+      font-weight:bold; 
+      font-size:20px; 
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .btn:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.4); }
+    
+    footer { margin-top:50px; opacity:0.7; }
   </style>
 </head>
 <body>
-  <h1>Husnain.dev</h1>
-  <p>Web Developer | Designer | Freelancer</p>
-  <a href="https://wa.me/923048867359" target="_blank" class="btn">Mujhse Rabta Karein</a>
+  <div class="container">
+    <h1>Husnain.dev</h1>
+    <h2>Web Developer | Designer | Freelancer</h2>
+    <p>Main modern aur responsive websites banata hun. Agar aapko apna business online lejana hai to main madad kar sakta hun.</p>
+    
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">GitHub</div>
+    </div>
+    
+    <a href="https://wa.me/923048867359" target="_blank" class="btn">Mujhse WhatsApp Pe Baat Karein 💬</a>
+    
+    <footer>© 2026 Husnain.dev - Pattoki, Pakistan</footer>
+  </div>
 </body>
 </html>
