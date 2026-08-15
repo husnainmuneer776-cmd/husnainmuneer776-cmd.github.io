@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karyany Ki Shop - Ahmad Nagar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@600;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-attachment: fixed;
+            color: #fff;
+            direction: rtl;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            margin-bottom: 30px;
+            border: 2px solid rgba(255,255,255,0.3);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            animation: glow 2s infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 8px 32px rgba(255,255,255,0.2); }
+            to { box-shadow: 0 8px 40px rgba(255,255,255,0.5); }
+        }
+        
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3em;
+            background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        
+        .shop-img {
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 25px;
+            margin: 20px auto;
+            display: block;
+            border: 5px solid #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s;
+        }
+        
+        .shop-img:hover {
+            transform: scale(1.05) rotate(1deg);
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+            backdrop-filter: blur(15px);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 0;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .info-title {
+            font-size: 1.5em;
+            color: #feca57;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .info-item {
+            font-size: 1.2em;
+            margin: 12px 0;
+            padding: 10px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            margin: 10px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a6f);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(238,90,111,0.4);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(238,90,111,0.6);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Karyany Ki Shop 🛒</h1>
+            <p style="font-size: 1.3em;">Aap ki sahulat, Hamari zimadari</p>
+        </header>
+        
+        <img src="photo2.jpg" alt="Karyany Shop Photo" class="shop-img">
+        
+        <div class="info-box">
+            <div class="info-title">📍 Hamara Pata</div>
+            <div class="info-item">Ahmad Nagar, Pattoki</div>
+            <div class="info-item">Street Number 7</div>
+        </div>
+        
+        <div class="info-box">
+            <div class="info-title">📞 Rabta Karein</div>
+            <div class="info-item">Number: 0304-8867359</div>
+            <a href="tel:03048867359" class="btn">📞 Call Karein</a>
+            <a href="https://wa.me/923048867359" class="btn">💬 WhatsApp</a>
+        </div>
+        
+        <div class="info-box">
+            <div class="info-title">🛍️ Hamari Khidmaat</div>
+            <div class="info-item">✓ Ghar ka saara saaman</div>
+            <div class="info-item">✓ Munasib rates</div>
+            <div class="info-item">✓ Pattoki me Home Delivery</div>
+        </div>
+        
+        <footer>
+            <p>© 2026 Karyany Ki Shop - Ahmad Nagar Pattoki</p>
+        </footer>
+    </div>
+</body>
+</html>
