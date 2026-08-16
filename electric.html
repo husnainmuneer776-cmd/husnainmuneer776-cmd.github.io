@@ -5,65 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAKEEL ELECTRIC STORE - Pattoki</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background: #f5f5f5; color: #333; }
-    .banner { background: linear-gradient(135deg, #0052cc, #ffcc00); color: white; text-align: center; padding: 30px 20px; }
-    .banner img { width: 120px; height: 120px; border-radius: 50%; border: 4px solid white; margin-bottom: 10px; }
-    .banner h1 { font-size: 32px; margin-bottom: 5px; }
-    .banner p { font-size: 16px; }
-    .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
-    .card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    .card h2 { color: #0052cc; border-bottom: 2px solid #ffcc00; padding-bottom: 10px; margin-bottom: 15px; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-    .service { background: #e6f0ff; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; }
-    .contact-btn { display: inline-block; background: #25D366; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; margin: 10px 5px; font-weight: bold; }
-    .call-btn { background: #0052cc; }
-    .urdu { font-size: 18px; text-align: center; color: #0052cc; font-weight: bold; }
-    footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 30px; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+    body { background: #f0f4f8; color: #333; }
+    .banner { background: linear-gradient(135deg, #004aad, #ffc107); color: white; text-align: center; padding: 40px 20px; }
+    .banner img { width: 130px; height: 130px; border-radius: 50%; border: 5px solid white; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+    .banner h1 { font-size: 36px; margin-bottom: 8px; letter-spacing: 1px; }
+    .banner p { font-size: 18px; font-weight: 500; }
+    .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+    .card { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .card h2 { color: #004aad; border-left: 5px solid #ffc107; padding-left: 12px; margin-bottom: 18px; font-size: 24px; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+    .service { background: linear-gradient(135deg, #e6f0ff, #fff8e1); padding: 18px; border-radius: 10px; text-align: center; font-weight: 600; border: 1px solid #ddd; transition: 0.3s; }
+    .service:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.1); }
+    .contact-box { text-align: center; }
+    .contact-btn { display: inline-block; background: #25D366; color: white; padding: 14px 28px; border-radius: 10px; text-decoration: none; margin: 10px 8px; font-weight: bold; font-size: 16px; transition: 0.3s; }
+    .contact-btn:hover { opacity: 0.9; transform: scale(1.05); }
+    .call-btn { background: #004aad; }
+    .urdu { font-size: 20px; text-align: center; color: #004aad; font-weight: bold; background: #fff8e1; padding: 15px; border-radius: 8px; }
+    footer { text-align: center; padding: 25px; background: #222; color: white; margin-top: 40px; font-size: 14px; }
   </style>
 </head>
 <body>
 
   <div class="banner">
-    <img src="photo4.jpg" alt="Sakeel Electric Store">
+    <img src="photo4.jpg" alt="Sakeel Electric Store Logo">
     <h1>SAKEEL ELECTRIC STORE</h1>
-    <p>Purana Karyana Bazar, Pattoki</p>
+    <p>Purana Karyana Bazar, Pattoki, Punjab, Pakistan</p>
   </div>
 
   <div class="container">
     
     <div class="card">
-      <h2>About Us</h2>
+      <h2>Shop Details</h2>
       <p><b>Owner:</b> Sakeel</p>
       <p><b>Address:</b> Purana Karyana Bazar, Pattoki, Punjab, Pakistan</p>
       <p><b>Phone:</b> 0301-8402868, 0300-4052868</p>
-      <br>
-      <a href="https://wa.me/923018402868" class="contact-btn">WhatsApp Now</a>
-      <a href="tel:03018402868" class="contact-btn call-btn">Call Now</a>
+      <div class="contact-box">
+        <a href="https://wa.me/923018402868" class="contact-btn">WhatsApp Now</a>
+        <a href="tel:03018402868" class="contact-btn call-btn">Call Now</a>
+      </div>
     </div>
 
     <div class="card">
-      <h2>Our Services</h2>
+      <h2>Our Products & Services</h2>
       <div class="services">
-        <div class="service">House Wiring</div>
-        <div class="service">Fan & Light Installation</div>
-        <div class="service">Solar System</div>
-        <div class="service">UPS & Generator</div>
+        <div class="service">House & Commercial Wiring</div>
+        <div class="service">High Quality Copper Wire</div>
+        <div class="service">Inverter Installation</div>
+        <div class="service">Fan & LED Light Installation</div>
         <div class="service">Switches & Sockets</div>
-        <div class="service">24/7 Emergency Service</div>
+        <div class="service">Modern Electric Accessories</div>
       </div>
     </div>
 
     <div class="card">
       <h2>Special Note</h2>
       <p class="urdu">یہاں سے ہر الیکٹرک کی چیز دستیاب ہے</p>
-      <p style="text-align:center; margin-top:10px;">All types of electric items available here at best price</p>
+      <p style="text-align:center; margin-top:12px; font-size:16px;">All types of modern electric items and quality wire available at best price</p>
     </div>
 
   </div>
 
   <footer>
-    <p>© 2026 SAKEEL ELECTRIC STORE | Pattoki</p>
+    <p>© 2026 SAKEEL ELECTRIC STORE | Pattoki | Trusted Electric Shop Since Years</p>
   </footer>
 
 </body>
