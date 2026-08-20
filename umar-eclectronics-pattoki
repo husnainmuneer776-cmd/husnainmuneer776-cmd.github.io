@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UMAR ELECTRONICS PATTOKI - Wholesale Dealer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f0f2f5}
+header{background:linear-gradient(90deg,#1e3a8a 0%,#dc2626 100%);color:white;padding:25px 10px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+header h1{font-size:40px;font-weight:900;letter-spacing:2px}
+header p{font-size:16px;font-weight:700;margin-top:5px;background:#dc2626;display:inline-block;padding:5px 15px;border-radius:5px}
+.banner{width:100%;height:350px;background:url('photo.jpg') center/cover no-repeat;border-bottom:5px solid #1e3a8a}
+.container{max-width:1100px;margin:-50px auto 30px;padding:30px;background:white;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.1)}
+h2{color:#1e3a8a;font-weight:800;font-size:28px;margin-bottom:15px;border-left:5px solid #dc2626;padding-left:10px}
+p{font-size:16px;line-height:1.8;color:#333}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin:20px 0}
+.product-card{background:linear-gradient(135deg,#1e3a8a,#3b82f6);color:white;padding:15px;border-radius:10px;font-weight:700;text-align:center}
+.contact-box{display:flex;gap:15px;justify-content:center;margin-top:25px;flex-wrap:wrap}
+.btn{padding:15px 25px;border-radius:10px;text-decoration:none;color:white;font-weight:800;font-size:18px;display:flex;align-items:center;gap:10px;transition:0.3s;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
+.btn:hover{transform:translateY(-3px)}
+.whatsapp{background:#25D366}
+.call{background:#dc2626}
+footer{background:#1e3a8a;color:white;text-align:center;padding:20px;margin-top:30px;font-weight:700}
+.urdu-note{color:#dc2626;font-weight:700;text-align:center;margin:20px 0;font-size:18px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>UMAR ELECTRONICS PATTOKI</h1>
+<p>WE DEAL IN ALL KIND OF ELECTRONICS | WHOLESALE DEALER</p>
+</header>
+
+<div class="banner"></div>
+
+<div class="container">
+<h2>About Us</h2>
+<p>Umar Electronics Pattoki is a trusted wholesale dealer of all electronics items. We provide best quality products at lowest wholesale rates in Pattoki and surrounding areas.</p>
+
+<h2>Our Products</h2>
+<div class="products">
+<div class="product-card">LED TV & Sound System</div>
+<div class="product-card">Mobile Accessories</div>
+<div class="product-card">Home Appliances</div>
+<div class="product-card">Kitchen Electronics</div>
+</div>
+
+<div class="urdu-note">
+ہمارے ریٹ سب سے کم اور برانڈ بھی سب سے مستند<br>
+ورنٹی کمپنی کے کارڈ کے مطابق ہوگی
+</div>
+
+<h2>Contact Us</h2>
+<p><b>Address:</b> Railway Road, Pattoki<br>
+<b>Email:</b> umarelectronics12@gmail.com<br>
+<b>Phone:</b> 0334 9466555</p>
+
+<div class="contact-box">
+<a href="https://wa.me/923349466555" target="_blank" class="btn whatsapp">📱 WhatsApp</a>
+<a href="tel:03349466555" class="btn call">📞 Call Now</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 UMAR ELECTRONICS PATTOKI
