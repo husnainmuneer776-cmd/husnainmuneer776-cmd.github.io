@@ -3,119 +3,1448 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UMAR ELECTRONICS PATTOKI - Wholesale Dealer</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+<title>Umar Electronics Pattoki | Wholesale Electronics Dealer</title>
+
+<meta name="description" content="Umar Electronics Pattoki - Trusted wholesale dealer of LED TVs, refrigerators, mobile phones and all kinds of electronics. Railway Road, Pattoki.">
+<meta name="keywords" content="Umar Electronics Pattoki, electronics Pattoki, wholesale electronics Pattoki, LED TV Pattoki, fridge Pattoki">
+<meta name="author" content="Umar Electronics Pattoki">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
-body{background:#f5f5f5}
-nav{background:#1e3a8a;color:white;padding:15px;position:sticky;top:0;z-index:100}
-nav ul{display:flex;list-style:none;justify-content:center;gap:30px;flex-wrap:wrap}
-nav a{color:white;text-decoration:none;font-weight:700}
-header{background:linear-gradient(90deg,#1e3a8a 0%,#dc2626 100%);color:white;text-align:center;padding:60px 20px}
-header h1{font-size:45px;font-weight:900}
-header p{font-size:18px;margin-top:10px;background:#dc2626;display:inline-block;padding:8px 20px;border-radius:5px}
-.banner{width:100%;height:400px;background:url('photo.jpg') center/cover no-repeat}
-.container{max-width:1200px;margin:30px auto;padding:20px}
-h2{text-align:center;color:#1e3a8a;font-size:35px;margin-bottom:30px;font-weight:900}
-.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{background:white;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.1);overflow:hidden;transition:0.3s}
-.card:hover{transform:translateY(-5px)}
-.card img{width:100%;height:200px;object-fit:cover;background:#ddd}
-.card-body{padding:15px}
-.card-body h3{color:#1e3a8a;font-weight:800}
-.price{color:#dc2626;font-size:20px;font-weight:900;margin:10px 0}
-.btn-order{background:#25D366;color:white;padding:10px 20px;border:none;border-radius:8px;font-weight:700;width:100%;cursor:pointer;text-decoration:none;display:block;text-align:center}
-.about,.contact{background:white;padding:30px;border-radius:15px;margin:30px 0;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
-.contact-box{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:20px}
-.btn{padding:15px 30px;border-radius:10px;text-decoration:none;color:white;font-weight:800;font-size:18px}
-.whatsapp{background:#25D366}
-.call{background:#dc2626}
-footer{background:#1e3a8a;color:white;text-align:center;padding:30px;margin-top:40px}
-.urdu-note{color:#dc2626;font-weight:700;text-align:center;margin:20px 0;font-size:20px}
+:root{
+    --primary:#0f2f75;
+    --primary-dark:#091f4d;
+    --secondary:#e21d2f;
+    --green:#25D366;
+    --white:#ffffff;
+    --light:#f5f7fb;
+    --dark:#111827;
+    --gray:#667085;
+    --border:#e5e7eb;
+    --shadow:0 12px 35px rgba(15,47,117,.10);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(15,47,117,.97);
+    backdrop-filter:blur(12px);
+    box-shadow:0 4px 20px rgba(0,0,0,.12);
+}
+
+.nav-container{
+    max-width:1250px;
+    margin:auto;
+    padding:14px 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:900;
+    letter-spacing:.5px;
+}
+
+.logo span{
+    color:#ff4656;
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ff6975;
+}
+
+.nav-whatsapp{
+    background:var(--green);
+    color:white;
+    padding:9px 16px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:700;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:650px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+
+    background:
+    linear-gradient(90deg,
+    rgba(5,22,60,.96) 0%,
+    rgba(15,47,117,.85) 48%,
+    rgba(15,47,117,.35) 100%),
+    url('photo.jpg') center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:1250px;
+    width:100%;
+    margin:auto;
+    padding:70px 25px;
+    color:white;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.25);
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    max-width:800px;
+    font-size:clamp(40px,6vw,72px);
+    line-height:1.05;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ff4b5c;
+}
+
+.hero p{
+    max-width:680px;
+    font-size:18px;
+    color:#e5e7eb;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 24px;
+    border-radius:9px;
+    font-weight:800;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--secondary);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    background:#c91425;
+}
+
+.btn-green{
+    background:var(--green);
+    color:white;
+}
+
+.btn-green:hover{
+    transform:translateY(-3px);
+}
+
+/* ================= TRUST BAR ================= */
+
+.trust-bar{
+    background:white;
+    box-shadow:var(--shadow);
+    position:relative;
+    margin:-45px auto 0;
+    max-width:1100px;
+    border-radius:15px;
+    z-index:5;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.trust-item{
+    text-align:center;
+    padding:25px 15px;
+    border-right:1px solid var(--border);
+}
+
+.trust-item:last-child{
+    border-right:0;
+}
+
+.trust-icon{
+    font-size:30px;
+    margin-bottom:5px;
+}
+
+.trust-item h3{
+    color:var(--primary);
+    font-size:17px;
+}
+
+.trust-item p{
+    color:var(--gray);
+    font-size:13px;
+}
+
+/* ================= GENERAL ================= */
+
+.container{
+    max-width:1250px;
+    margin:auto;
+    padding:80px 25px;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-heading .small-title{
+    color:var(--secondary);
+    font-size:14px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.section-heading h2{
+    color:var(--primary);
+    font-size:clamp(30px,4vw,45px);
+    font-weight:900;
+    margin:5px 0 10px;
+}
+
+.section-heading p{
+    color:var(--gray);
+    max-width:650px;
+    margin:auto;
+}
+
+/* ================= PRODUCTS ================= */
+
+.product-controls{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+.search-box{
+    flex:1;
+    min-width:240px;
+}
+
+.search-box input{
+    width:100%;
+    padding:14px 18px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    outline:none;
+    background:white;
+    font-family:inherit;
+}
+
+.search-box input:focus{
+    border-color:var(--primary);
+}
+
+.category-buttons{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.category-buttons button{
+    border:1px solid var(--border);
+    background:white;
+    color:var(--primary);
+    padding:11px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-family:inherit;
+    font-weight:700;
+}
+
+.category-buttons button.active,
+.category-buttons button:hover{
+    background:var(--primary);
+    color:white;
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.product-card{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid #edf0f5;
+    transition:.35s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(15,47,117,.15);
+}
+
+.product-image{
+    height:230px;
+    position:relative;
+    overflow:hidden;
+    background:#eef2f7;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.07);
+}
+
+.product-tag{
+    position:absolute;
+    top:14px;
+    left:14px;
+    background:var(--secondary);
+    color:white;
+    padding:6px 10px;
+    border-radius:6px;
+    font-size:11px;
+    font-weight:800;
+}
+
+.product-body{
+    padding:20px;
+}
+
+.product-body h3{
+    color:var(--primary);
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.product-body p{
+    color:var(--gray);
+    font-size:14px;
+    min-height:45px;
+}
+
+.price{
+    color:var(--secondary);
+    font-size:22px;
+    font-weight:900;
+    margin:13px 0;
+}
+
+.order-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:var(--green);
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    font-weight:800;
+    transition:.3s;
+}
+
+.order-btn:hover{
+    background:#1daf56;
+}
+
+/* ================= ABOUT ================= */
+
+.about-section{
+    background:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-image{
+    min-height:420px;
+    border-radius:20px;
+    background:
+    linear-gradient(rgba(15,47,117,.25),rgba(15,47,117,.25)),
+    url('photo.jpg') center/cover no-repeat;
+    box-shadow:var(--shadow);
+}
+
+.about-content .small-title{
+    color:var(--secondary);
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+.about-content h2{
+    color:var(--primary);
+    font-size:42px;
+    line-height:1.2;
+    margin:8px 0 18px;
+}
+
+.about-content p{
+    color:var(--gray);
+    margin-bottom:18px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:25px;
+}
+
+.feature{
+    background:var(--light);
+    padding:15px;
+    border-radius:10px;
+}
+
+.feature strong{
+    color:var(--primary);
+}
+
+/* ================= URDU ================= */
+
+.urdu-box{
+    margin-top:25px;
+    background:#fff3f4;
+    border-left:5px solid var(--secondary);
+    padding:18px;
+    border-radius:8px;
+    font-family:'Noto Naskh Arabic',serif;
+    text-align:center;
+    font-size:21px;
+    color:#b81727;
+    font-weight:700;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+    background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+    color:white;
+}
+
+.contact-section .section-heading h2{
+    color:white;
+}
+
+.contact-section .section-heading p{
+    color:#dce5ff;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-card{
+    background:white;
+    color:var(--dark);
+    border-radius:16px;
+    padding:30px;
+    box-shadow:var(--shadow);
+}
+
+.contact-card h3{
+    color:var(--primary);
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.contact-info{
+    display:flex;
+    gap:15px;
+    margin-bottom:18px;
+    align-items:flex-start;
+}
+
+.contact-info .icon{
+    width:42px;
+    height:42px;
+    background:#eef3ff;
+    color:var(--primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+    flex-shrink:0;
+}
+
+.contact-info strong{
+    display:block;
+    color:var(--primary);
+}
+
+.contact-info span{
+    color:var(--gray);
+    font-size:14px;
+}
+
+.contact-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
+
+.contact-buttons .btn{
+    flex:1;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#061735;
+    color:#b9c4db;
+    padding:35px 20px 20px;
+    text-align:center;
+}
+
+.footer-logo{
+    color:white;
+    font-size:25px;
+    font-weight:900;
+    margin-bottom:8px;
+}
+
+.footer-logo span{
+    color:#ff4656;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin:18px 0;
+}
+
+.footer-links a{
+    color:#dbe3f5;
+    font-size:14px;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.1);
+    padding-top:18px;
+    font-size:13px;
+}
+
+/* ================= FLOATING WHATSAPP ================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:var(--green);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    box-shadow:0 8px 25px rgba(37,211,102,.35);
+    z-index:999;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}
+    70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .nav-container{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .nav-links{
+        gap:18px;
+    }
+
+    .nav-whatsapp{
+        display:none;
+    }
+
+    .hero{
+        min-height:580px;
+    }
+
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-image{
+        min-height:350px;
+    }
+}
+
+@media(max-width:600px){
+
+    .nav-container{
+        padding:12px 15px;
+    }
+
+    .logo{
+        font-size:18px;
+    }
+
+    .nav-links{
+        gap:12px;
+    }
+
+    .nav-links a{
+        font-size:12px;
+    }
+
+    .hero-content{
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+
+    .trust-bar{
+        margin:0 15px;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr;
+    }
+
+    .trust-item{
+        border-right:0;
+        border-bottom:1px solid var(--border);
+    }
+
+    .trust-item:last-child{
+        border-bottom:0;
+    }
+
+    .container{
+        padding:60px 15px;
+    }
+
+    .products-grid{
+        grid-template-columns:1fr;
+    }
+
+    .product-controls{
+        display:block;
+    }
+
+    .category-buttons{
+        margin-top:12px;
+    }
+
+    .about-content h2{
+        font-size:32px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .contact-card{
+        padding:22px;
+    }
+}
 </style>
 </head>
+
 <body>
 
-<nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#products">Products</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            UMAR <span>ELECTRONICS</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="https://wa.me/923349466555" target="_blank" class="nav-whatsapp">
+            WhatsApp Us
+        </a>
+
+    </div>
 </nav>
 
-<header id="home">
-<h1>UMAR ELECTRONICS PATTOKI</h1>
-<p>WE DEAL IN ALL KIND OF ELECTRONICS | WHOLESALE DEALER</p>
+
+<!-- ================= HERO ================= -->
+
+<header class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            ⭐ Trusted Electronics Dealer Since 2010
+        </div>
+
+        <h1>
+            UMAR ELECTRONICS
+            <span>PATTOKI</span>
+        </h1>
+
+        <p>
+            We deal in all kinds of electronics at competitive wholesale rates.
+            Genuine products, trusted brands and company warranty.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products" class="btn btn-primary">
+                🛒 View Products
+            </a>
+
+            <a href="https://wa.me/923349466555?text=Assalam-o-Alaikum%20Umar%20Electronics%2C%20I%20want%20to%20know%20about%20your%20products."
+               target="_blank"
+               class="btn btn-green">
+                📱 WhatsApp Now
+            </a>
+
+        </div>
+
+    </div>
+
 </header>
 
-<div class="banner"></div>
+
+<!-- ================= TRUST BAR ================= -->
+
+<div class="trust-bar">
+
+    <div class="trust-grid">
+
+        <div class="trust-item">
+            <div class="trust-icon">🏆</div>
+            <h3>Trusted Dealer</h3>
+            <p>Serving customers since 2010</p>
+        </div>
+
+        <div class="trust-item">
+            <div class="trust-icon">💰</div>
+            <h3>Wholesale Rates</h3>
+            <p>Competitive market prices</p>
+        </div>
+
+        <div class="trust-item">
+            <div class="trust-icon">🛡️</div>
+            <h3>Company Warranty</h3>
+            <p>Warranty according to company policy</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products">
 
 <div class="container">
 
-<section id="products">
-<h2>Our Products</h2>
-<div class="products-grid">
+    <div class="section-heading">
 
-<div class="card">
-<img src="https://via.placeholder.com/300x200/1e3a8a/ffffff?text=LED+TV">
-<div class="card-body">
-<h3>LED TV 43 Inch</h3>
-<p>Smart Android TV, 4K Display</p>
-<div class="price">Rs. 85,000</div>
-<a href="https://wa.me/923349466555?text=I want LED TV 43 Inch" class="btn-order">Order on WhatsApp</a>
-</div>
+        <div class="small-title">Our Collection</div>
+
+        <h2>Featured Products</h2>
+
+        <p>
+            Quality electronics from trusted brands at wholesale prices.
+        </p>
+
+    </div>
+
+
+    <div class="product-controls">
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="productSearch"
+                placeholder="🔍 Search products..."
+                onkeyup="searchProducts()"
+            >
+        </div>
+
+        <div class="category-buttons">
+
+            <button class="active" onclick="filterProducts('all',this)">
+                All
+            </button>
+
+            <button onclick="filterProducts('tv',this)">
+                LED TV
+            </button>
+
+            <button onclick="filterProducts('fridge',this)">
+                Fridge
+            </button>
+
+            <button onclick="filterProducts('mobile',this)">
+                Mobile
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="products-grid" id="productGrid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product-card" data-category="tv">
+
+            <div class="product-image">
+
+                <span class="product-tag">POPULAR</span>
+
+                <img
+                    src="https://via.placeholder.com/600x400/0f2f75/ffffff?text=LED+TV"
+                    alt="LED TV 43 Inch"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <h3>LED TV 43 Inch</h3>
+
+                <p>
+                    Smart Android TV with 4K display and modern design.
+                </p>
+
+                <div class="price">
+                    Rs. 85,000
+                </div>
+
+                <a
+                    href="https://wa.me/923349466555?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20LED%20TV%2043%20Inch."
+                    target="_blank"
+                    class="order-btn"
+                >
+                    📱 Order on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product-card" data-category="fridge">
+
+            <div class="product-image">
+
+                <span class="product-tag">BEST SELLER</span>
+
+                <img
+                    src="https://via.placeholder.com/600x400/e21d2f/ffffff?text=Double+Door+Fridge"
+                    alt="Double Door Fridge"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <h3>Double Door Fridge</h3>
+
+                <p>
+                    Energy-saving refrigerator with large storage capacity.
+                </p>
+
+                <div class="price">
+                    Rs. 1,20,000
+                </div>
+
+                <a
+                    href="https://wa.me/923349466555?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Double%20Door%20Fridge."
+                    target="_blank"
+                    class="order-btn"
+                >
+                    📱 Order on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product-card" data-category="mobile">
+
+            <div class="product-image">
+
+                <span class="product-tag">WHOLESALE</span>
+
+                <img
+                    src="https://via.placeholder.com/600x400/25D366/ffffff?text=Mobile+Phones"
+                    alt="Mobile Phones"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <h3>Mobile Phones</h3>
+
+                <p>
+                    All major brands available on wholesale rates.
+                </p>
+
+                <div class="price">
+                    Wholesale Rate
+                </div>
+
+                <a
+                    href="https://wa.me/923349466555?text=Assalam-o-Alaikum%2C%20I%20want%20to%20know%20about%20available%20Mobile%20Phones."
+                    target="_blank"
+                    class="order-btn"
+                >
+                    📱 Ask on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product-card" data-category="tv">
+
+            <div class="product-image">
+
+                <img
+                    src="https://via.placeholder.com/600x400/334155/ffffff?text=Smart+TV"
+                    alt="Smart TV"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <h3>Smart LED TV</h3>
+
+                <p>
+                    Latest smart TV models with premium picture quality.
+                </p>
+
+                <div class="price">
+                    Call for Price
+                </div>
+
+                <a
+                    href="https://wa.me/923349466555?text=Assalam-o-Alaikum%2C%20I%20want%20to%20know%20about%20Smart%20LED%20TV%20prices."
+                    target="_blank"
+                    class="order-btn"
+                >
+                    📱 Get Price
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 5 -->
+
+        <div class="product-card" data-category="fridge">
+
+            <div class="product-image">
+
+                <img
+                    src="https://via.placeholder.com/600x400/475569/ffffff?text=Refrigerator"
+                    alt="Refrigerator"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <h3>Refrigerators</h3>
+
+                <p>
+                    Multiple sizes and models available.
+                </p>
+
+                <div class="price">
+                    Call for Price
+                </div>
+
+                <a
+                    href="https://wa.me/923349466555?text=Assalam-o-Alaikum%2C%20I%20want%20to%20know%20about%20Refrigerators."
+                    target="_blank"
+                    class="order-btn"
+                >
+                    📱 Get Price
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 6 -->
+
+        <div class="product-card" data-category="mobile">
+
+            <div class="product-image">
+
+                <img
+                    src="https://via.placeholder.com/600x400/64748b/ffffff?text=Smartphones"
+                    alt="Smartphones"
+                >
+
+            </div>
+
+            <div class="product-body">
+
+                <h3>Smartphones</h3>
+
+                <p>
+                    Latest models from leading brands.
+                </p>
+
+                <div class="price">
+                    Wholesale Rate
+                </div>
+
+                <a
+                    href="https://wa.me/923349466555?text=Assalam-o-Alaikum%2C%20I%20want%20to%20know%20about%20available%20Smartphones."
+                    target="_blank"
+                    class="order-btn"
+                >
+                    📱 Ask on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
-<div class="card">
-<img src="https://via.placeholder.com/300x200/dc2626/ffffff?text=Fridge">
-<div class="card-body">
-<h3>Double Door Fridge</h3>
-<p>Energy Saving, 12 Cubic</p>
-<div class="price">Rs. 1,20,000</div>
-<a href="https://wa.me/923349466555?text=I want Double Door Fridge" class="btn-order">Order on WhatsApp</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/300x200/25D366/ffffff?text=Mobile">
-<div class="card-body">
-<h3>Mobile Phones</h3>
-<p>All Brands Available</p>
-<div class="price">Wholesale Rate</div>
-<a href="https://wa.me/923349466555?text=I want Mobile Phone" class="btn-order">Order on WhatsApp</a>
-</div>
-</div>
-
-</div>
 </section>
 
-<section id="about" class="about">
-<h2>About Us</h2>
-<p>Umar Electronics Pattoki is a trusted wholesale dealer since 2010. We provide best quality electronics at lowest wholesale rates in Pattoki and surrounding areas. Our mission is to give customers genuine products with company warranty.</p>
-<div class="urdu-note">
-ہمارے ریٹ سب سے کم اور برانڈ بھی سب سے مستند<br>
-ورنٹی کمپنی کے کارڈ کے مطابق ہوگی
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+<div class="container">
+
+    <div class="about-grid">
+
+        <div class="about-image"></div>
+
+        <div class="about-content">
+
+            <div class="small-title">
+                About Our Business
+            </div>
+
+            <h2>
+                Your Trusted Electronics Partner in Pattoki
+            </h2>
+
+            <p>
+                Umar Electronics Pattoki is a trusted wholesale electronics
+                dealer serving Pattoki and surrounding areas since 2010.
+            </p>
+
+            <p>
+                We believe in providing genuine products, competitive prices
+                and reliable customer service. Our goal is to build long-term
+                relationships with our customers through quality and trust.
+            </p>
+
+
+            <div class="features">
+
+                <div class="feature">
+                    ✅ <strong>Genuine Products</strong>
+                </div>
+
+                <div class="feature">
+                    💰 <strong>Wholesale Rates</strong>
+                </div>
+
+                <div class="feature">
+                    🛡️ <strong>Company Warranty</strong>
+                </div>
+
+                <div class="feature">
+                    🤝 <strong>Trusted Service</strong>
+                </div>
+
+            </div>
+
+
+            <div class="urdu-box">
+
+                ہمارے ریٹ سب سے کم اور برانڈ بھی سب سے مستند<br>
+                وارنٹی کمپنی کے کارڈ کے مطابق ہوگی
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
+
 </section>
 
-<section id="contact" class="contact">
-<h2>Contact Us</h2>
-<p><b>Address:</b> Railway Road, Pattoki<br>
-<b>Email:</b> umarelectronics12@gmail.com<br>
-<b>Phone:</b> 0334 9466555</p>
-<div class="contact-box">
-<a href="https://wa.me/923349466555" target="_blank" class="btn whatsapp">📱 WhatsApp</a>
-<a href="tel:03349466555" class="btn call">📞 Call Now</a>
-</div>
-</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <div class="small-title">
+            Get In Touch
+        </div>
+
+        <h2>
+            Contact Umar Electronics
+        </h2>
+
+        <p>
+            For prices, availability, wholesale deals and product information,
+            contact us directly.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <div class="contact-card">
+
+            <h3>Business Information</h3>
+
+            <div class="contact-info">
+
+                <div class="icon">📍</div>
+
+                <div>
+                    <strong>Address</strong>
+                    <span>Railway Road, Pattoki, Punjab, Pakistan</span>
+                </div>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <div class="icon">📞</div>
+
+                <div>
+                    <strong>Phone</strong>
+                    <span>0334 9466555</span>
+                </div>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <div class="icon">✉️</div>
+
+                <div>
+                    <strong>Email</strong>
+                    <span>umarelectronics12@gmail.com</span>
+                </div>
+
+            </div>
+
+
+            <div class="contact-buttons">
+
+                <a
+                    href="tel:03349466555"
+                    class="btn btn-primary"
+                >
+                    📞 Call Now
+                </a>
+
+                <a
+                    href="https://wa.me/923349466555"
+                    target="_blank"
+                    class="btn btn-green"
+                >
+                    📱 WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>Why Choose Us?</h3>
+
+            <p>
+                ✔ Trusted wholesale electronics dealer
+            </p>
+
+            <p>
+                ✔ Competitive wholesale prices
+            </p>
+
+            <p>
+                ✔ Genuine branded products
+            </p>
+
+            <p>
+                ✔ Company warranty available
+            </p>
+
+            <p>
+                ✔ Friendly customer service
+            </p>
+
+            <p>
+                ✔ Serving Pattoki & surrounding areas
+            </p>
+
+            <br>
+
+            <a
+                href="https://wa.me/923349466555?text=Assalam-o-Alaikum%2C%20I%20want%20to%20visit%20Umar%20Electronics%20Pattoki."
+                target="_blank"
+                class="btn btn-green"
+                style="width:100%"
+            >
+                💬 Chat With Us
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
-<p>© 2026 UMAR ELECTRONICS PATTOKI | Railway Road Pattoki</p>
+
+    <div class="footer-logo">
+        UMAR <span>ELECTRONICS</span>
+    </div>
+
+    <p>
+        Trusted Wholesale Electronics Dealer in Pattoki
+    </p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="copyright">
+        © 2026 Umar Electronics Pattoki. All Rights Reserved.
+    </div>
+
 </footer>
+
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a
+    href="https://wa.me/923349466555?text=Assalam-o-Alaikum%2C%20I%20want%20to%20know%20about%20your%20electronics%20products."
+    target="_blank"
+    class="whatsapp-float"
+    aria-label="Chat on WhatsApp"
+>
+    💬
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function filterProducts(category, button){
+
+    const products = document.querySelectorAll('.product-card');
+    const buttons = document.querySelectorAll('.category-buttons button');
+
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    button.classList.add('active');
+
+    products.forEach(product => {
+
+        if(category === 'all' ||
+           product.dataset.category === category){
+
+            product.style.display = 'block';
+
+        }else{
+
+            product.style.display = 'none';
+
+        }
+
+    });
+
+}
+
+
+function searchProducts(){
+
+    const search =
+        document.getElementById('productSearch')
+        .value
+        .toLowerCase();
+
+    const products =
+        document.querySelectorAll('.product-card');
+
+    products.forEach(product => {
+
+        const text =
+            product.innerText.toLowerCase();
+
+        if(text.includes(search)){
+
+            product.style.display = 'block';
+
+        }else{
+
+            product.style.display = 'none';
+
+        }
+
+    });
+
+}
+
+</script>
 
 </body>
 </html>
